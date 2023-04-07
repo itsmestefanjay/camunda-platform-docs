@@ -26,7 +26,7 @@ Clients allow applications to do the following:
 - Publish messages.
 - Update process instance variables and resolve incidents.
 
-The official clients mentioned below interact with [Zeebe](/components/zeebe/zeebe-overview.md), the workflow engine integrated into Camunda Platform 8. Clients connect to Camunda Platform 8 via [gRPC](https://grpc.io), a high-performance, open source, and universal RPC protocol.
+The official clients mentioned below interact with [Zeebe](/components/zeebe/zeebe-overview.md), the workflow engine integrated into Camunda Platform 8. All clients require [setting up client credentials](https://docs.camunda.io/docs/guides/setup-client-connection-credentials/) to authenticate. Clients connect to Camunda Platform 8 via [gRPC](https://grpc.io), a high-performance, open source, and universal RPC protocol.
 
 Camunda Platform 8 provides several official clients based on this API. Official clients have been developed and tested by Camunda. They also add convenience functions (for example, thread handling for job workers) on top of the core API.
 
@@ -44,23 +44,23 @@ type:"link", href:"/docs/apis-clients/cli-client/index", label: "CLI client", do
 ]}/>
 
 :::note
-Other components in Camunda Platform 8, such as [Tasklist API (GraphQL)](tasklist-api/generated.md), provide language-agnostic APIs, but no clients to interact with them. GraphQL enables you to query, claim, and complete user tasks.
+Other components in Camunda Platform 8, such as [Tasklist API (GraphQL)](../apis-clients/tasklist-api/generated.md), provide language-agnostic APIs, but no clients to interact with them. GraphQL enables you to query, claim, and complete user tasks.
 :::
 
 ### Community clients
 
 Community clients supplement the official clients. These clients have not been tested by Camunda.
 
-- [C#](community-clients/c-sharp.md)
-- [JavaScript/NodeJS](community-clients/javascript.md)
-- [Micronaut](community-clients/micronaut.md)
-- [Python](community-clients/python.md)
-- [Ruby](community-clients/ruby.md)
-- [Rust](community-clients/rust.md)
-- [Spring](community-clients/spring.md)
-- [Quarkus](community-clients/quarkus.md)
+- [C#](../apis-clients/community-clients/c-sharp.md)
+- [JavaScript/NodeJS](../apis-clients/community-clients/javascript.md)
+- [Micronaut](../apis-clients/community-clients/micronaut.md)
+- [Python](../apis-clients/community-clients/python.md)
+- [Ruby](../apis-clients/community-clients/ruby.md)
+- [Rust](../apis-clients/community-clients/rust.md)
+- [Spring](../apis-clients/community-clients/spring.md)
+- [Quarkus](../apis-clients/community-clients/quarkus.md)
 
-It is also possible to [build your own client](build-your-own-client.md) You can browse other community extensions and the most up-to-date list of community clients [here](https://github.com/orgs/camunda-community-hub/repositories).
+It is also possible to [build your own client](../apis-clients/build-your-own-client.md) You can browse other community extensions and the most up-to-date list of community clients [here](https://github.com/orgs/camunda-community-hub/repositories).
 
 ## Learn about Camunda Components and their APIs
 
@@ -68,7 +68,7 @@ It is also possible to [build your own client](build-your-own-client.md) You can
 
 <DocCardList items={[{type:"link", href:"/docs/apis-clients/tasklist-api/tasklist-api-overview/", label: "Tasklist API (GraphQL)", docId:"apis-clients/tasklist-api/tasklist-api-overview"},
 {
-type:"link", href:"/docs/apis-clients/operate-api/index/", label: "Operate API (REST)", docId:"apis-clients/operate-api/index"
+type:"link", href:"/docs/apis-clients/operate-api/", label: "Operate API (REST)", docId:"apis-clients/operate-api/operate-api-overview"
 },
 {
 type:"link", href:"/docs/apis-clients/console-api-reference/", label: "Console API (REST)", docId:"apis-clients/console-api-reference"
