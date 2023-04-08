@@ -602,6 +602,14 @@ module.exports = {
               "components/connectors/out-of-the-box-connectors/aws-lambda/"
             ),
             docsLink(
+              "AWS Lambda Connector",
+              "components/connectors/out-of-the-box-connectors/easy-post/"
+            ),
+            docsLink(
+              "GitHub Connector",
+              "components/connectors/out-of-the-box-connectors/github/"
+            ),
+            docsLink(
               "GitHub Webhook Connector",
               "components/connectors/out-of-the-box-connectors/github-webhook/"
             ),
@@ -612,6 +620,10 @@ module.exports = {
             docsLink(
               "Google Drive Connector",
               "components/connectors/out-of-the-box-connectors/googledrive/"
+            ),
+            docsLink(
+              "Google Maps Platform Connector",
+              "components/connectors/out-of-the-box-connectors/google-maps-platform/"
             ),
             docsLink(
               "GraphQL Connector",
@@ -650,7 +662,7 @@ module.exports = {
               "components/connectors/out-of-the-box-connectors/slack/"
             ),
             docsLink(
-              "UIPath Connector",
+              "UiPath Connector",
               "components/connectors/out-of-the-box-connectors/uipath/"
             ),
           ],
@@ -1032,7 +1044,12 @@ module.exports = {
       APIs: [
         docsLink("Public API", "apis-clients/public-api/"),
         docsLink("Zeebe API (gRPC)", "apis-clients/grpc/"),
-        docsLink("Operate API (REST)", "apis-clients/operate-api/"),
+        {
+          "Operate API (REST)": [
+            docsLink("Overview", "apis-clients/operate-api/overview/"),
+            docsLink("Tutorial", "apis-clients/operate-api/tutorial/"),
+          ],
+        },
         {
           "Tasklist API (GraphQL)": [
             docsLink(
@@ -1564,6 +1581,7 @@ module.exports = {
         {
           "Migration & update": [
             "self-managed/optimize-deployment/migration-update/instructions",
+            "self-managed/optimize-deployment/migration-update/3.9-to-3.10",
             "self-managed/optimize-deployment/migration-update/3.9-preview-1-to-3.9",
             "self-managed/optimize-deployment/migration-update/3.8-to-3.9-preview-1",
             "self-managed/optimize-deployment/migration-update/3.7-to-3.8",
@@ -1698,11 +1716,16 @@ module.exports = {
     },
 
     {
-      "Web Modeler (Beta)": [
+      "Web Modeler": [
         docsLink(
           "Installation",
           "self-managed/modeler/web-modeler/installation/"
         ),
+        docsLink(
+          "Configuration",
+          "self-managed/modeler/web-modeler/configuration/"
+        ),
+        docsLink("API access", "self-managed/modeler/web-modeler/api/"),
       ],
     },
 
